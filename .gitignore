@@ -1,0 +1,67 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+*.whl
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Environment / secrets
+.env
+*.env
+!.env.example
+
+# Logs
+*.log
+bruteforce.log
+disk_imaging.log
+disk_reader.log
+keylog.txt
+keylog.txt.1
+
+# Scan output
+scan_results/*.txt
+scan_results/*.gnmap
+scan_results/*.json
+~/nmap_scans/
+~/wifi_scans/
+
+# Disk images
+*.img
+*.img.gz
+*.iso
+*.sha256
+*.sha512
+*.sha1
+*.md5
+
+# Capture files
+*.pcap
+*.cap
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editors
+.vscode/settings.json
+.idea/
+*.swp
+*.swo
+*~
+
+# Temp
+tmp/
+temp/
+*.tmp

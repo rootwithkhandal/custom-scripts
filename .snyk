@@ -1,0 +1,15 @@
+# Snyk (https://snyk.io) policy file
+version: v1.25.0
+
+ignore:
+  python/PT:
+    - 'forensics/disk_imaging.py':
+        reason: >
+          gzip.open() receives _IMAGE_OUTPUT_PATH, a module-level string set in
+          main() only after full validation via _safe_output_path() which checks
+          the resolved path against an allowlist (home, /mnt, /media, /tmp).
+          os.path.realpath is applied before assignment. Snyk taint traces through
+          Path attribute access but the value is safe.
+        expires: 2027-01-01T00:00:00.000Z
+
+patch: {}
